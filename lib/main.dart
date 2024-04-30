@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -35,7 +37,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _numeroAleatorio = 0;
-  List _frases = [
+  final List _frases = [
     'A persistência é o caminho do êxito!',
     'O otimismo é a fé em ação!',
     'Jesus é o caminho, a verdade e a vida!',
@@ -44,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-  _numeroAleatorio = new Random().nextInt(4);
+  _numeroAleatorio = Random().nextInt(4);
 
     });
   }
@@ -64,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+           Text(
               'Precione o botão " + " para gerar uma frase.',
             ),
             Text(
@@ -77,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: Icon(Icons.add),
       ),
     );
   }

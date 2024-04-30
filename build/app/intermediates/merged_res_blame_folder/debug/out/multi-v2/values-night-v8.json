@@ -4,7 +4,7 @@
             "outputFile": "com.example.meu_primeiro_app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/davi/Área de Trabalho/meu_primeiro_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/davi/Documentos/Projeto-Flutter/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
